@@ -30,11 +30,11 @@ aliases:
           name: Publish package
           command: npx semantic-release --branches develop
       - slack/notify:
-          channel: test-circleci
+          channel: circleci-backend-deploys
           event: fail
           template: basic_fail_1
       - slack/notify:
-          channel: test-circleci
+          channel: circleci-backend-deploys
           event: pass
           template: success_tagged_deploy_1
 
